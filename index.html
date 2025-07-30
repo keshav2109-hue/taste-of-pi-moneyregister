@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taste of π - Restaurant Ordering System</title>
+    <style>
+      @media print {
+        body * {
+          visibility: hidden;
+        }
+        .print\:shadow-none,
+        .print\:shadow-none * {
+          visibility: visible;
+        }
+        .print\:shadow-none {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+        }
+        .print\:hidden {
+          display: none !important;
+        }
+        .print\:mb-4 {
+          margin-bottom: 1rem !important;
+        }
+        .print\:mb-2 {
+          margin-bottom: 0.5rem !important;
+        }
+        .print\:p-4 {
+          padding: 1rem !important;
+        }
+        .print\:pt-2 {
+          padding-top: 0.5rem !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
